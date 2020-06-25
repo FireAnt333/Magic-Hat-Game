@@ -1,0 +1,79 @@
+/*
+COLORS: http://www.colors.commutercreative.com/grid/
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, p {
+  font-family: Helvetica;
+  text-align: center;
+}
+
+body {
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+table, td, th {
+  border: 1px solid black;
+  border-spacing: 0px;
+}
+
+/*table {
+  margin-top: 700px;
+}*/
+
+
+#imgCanvas {
+  width: 640px;
+  height: 640px;
+  -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-pixelated;
+    image-rendering: pixelated;
+  z-index: 2;
+}
+
+#txtCanvas {
+  background: #000;
+  z-index: 1;
+}
+
+#container {
+  width: 640px;
+  height: 640px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  position: relative;    
+  /*text-align: center;*/
+}
+
+/* copied from stack overflow answer (a weakly triumphant "yay" for this person solving my worst problem in this project so far (couldn't get canvases centered after layering them))
+https://stackoverflow.com/questions/11268365/using-canvas-layers-that-are-not-positioned-using-positionabsolute
+#contain {
+  width: 480px;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;    
+}
+*/
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0; 
+
+  border: 3px solid #333;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+

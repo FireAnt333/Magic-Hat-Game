@@ -1,0 +1,42 @@
+/*
+COLORS: http://www.colors.commutercreative.com/grid/
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, p {
+  font-family: Helvetica;
+  text-align: center;
+}
+
+body {
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  /*
+  width: 640px;
+  height: 640px;
+  -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-pixelated;
+    image-rendering: pixelated;
+  */
+  background: #000;
+  border: 3px solid #333;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+table, td, th {
+  border: 1px solid black;
+  border-spacing: 0px;
+}
